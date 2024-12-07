@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Bar</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+        .main_cont{
+            display: flex;
+            flex-direction: row;    
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+            max-width: 330px;
+            border-radius: 5px;
+            vertical-align: top;
+        }
+        p{
+            margin-left: 5px;
+        }
+        .count_cont{
+            display: flex;
+            flex-direction: column;
+            vertical-align: top;
+        }
+        button{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 200px;
+            border-style: none;
+            background-color: #4169E1;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 2px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_cont">
+        <div class="txt_cont">
+            <p>Home</p>
+            <p>Notifications</p>
+            <p>Messages</p>
+        </div>
+
+        <div class="count_cont">
+            <button>14</button>
+            <button>3</button>
+            <button>5</button>
+        </div>
+    </div>
+</body>
+</html>

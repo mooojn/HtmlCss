@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Grclass</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+        .cont1{
+            display: grid;
+            grid-template-columns: 200px 75px;
+            margin-bottom: 10px;
+        }
+        .b{
+            background-color: lightblue;
+        }
+        .p{
+            background-color: lightpink;
+        }
+        .cont2{
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;   
+            margin-bottom: 10px;
+        }
+        .cont3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;  
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="cont1">
+        <p class="b">200px</p>
+        <p class="p">75px</p>
+    </div>
+
+    <div class="cont2">
+        <p class="b">col1</p>
+        <p class="p">col2</p>
+        <p class="b">col3</p>
+    </div>
+
+    <div class="cont3">
+        <p class="p">col1</p>
+        <p class="p">col2</p> 
+        <p class="p">col3</p> 
+        <p class="p">col4</p> 
+
+        <p class="p">col1</p>
+        <p class="p">col2</p> 
+        <p class="p">col3</p> 
+        <p class="p">col4</p> 
+    </div>
+    
+</body>
+</html>

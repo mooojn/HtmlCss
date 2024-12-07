@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+        .cont1{
+            display: flex;
+            flex-direction: row;
+        }
+        #b{
+            background-color: lightblue;
+            width: 200px;
+        }
+        #p{
+            background-color: lightpink;
+            width: 75px;
+        }
+        .cont2{
+            display: flex;
+            flex-direction: row;
+        }
+        .cont2 #b{
+            width: 50px;
+        }
+        .cont2 #p{
+            flex: 1;
+        }
+        .cont2 #b1{
+            background-color: lightblue;
+            width: 75px;
+        }
+        .cont3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #p1{
+            background-color: lightpink;
+        }
+        .cont4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-style: solid;
+            border-color: gray;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont1">
+        <p id="b">200px</p>
+        <p id="p">75px</p>
+    </div>
+
+    <div class="cont2">
+        <p id="b">item1</p>
+        <p id="p">item2</p>
+        <p id="b1">item3</p>
+    </div>
+
+    <div class="cont3">
+        <p id="p1">item1</p>
+        <p id="p1">item2</p>
+        <p id="p1">item3</p>
+        <p id="p1">item4</p>
+    </div>
+
+    <div class="cont4">
+        <p id="p1">item1</p>
+        <p id="p1">item2</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stretch</title>
+    <style>
+        button{
+            background-color: green;
+            color: white;
+            font-size: 17px;
+            border-style: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+       #stretch{
+            margin-bottom: 20px;
+            transition: padding 1s, font-size 1s;
+        }
+        #stretch:hover{
+            padding: 20px 40px;
+            font-size: 25px;
+        }
+        #btn1, #btn2, #btn3{
+            margin-right: 10px;
+            margin-left: 10px;
+            transition: padding-left 1s, padding-right 1s;
+        }
+        #btn1:hover, #btn2:hover, #btn3:hover{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="stretch">Stretch</button>
+    <br>
+    <div class="btns">
+        <button id="btn1">One</button>
+        <button id="btn2">Two</button>
+        <button id="btn3">Three</button>
+    </div>
+</body>
+</html>

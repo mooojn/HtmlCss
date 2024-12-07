@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .btn{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(145, 140, 140);
+            background: none;
+            border-radius: 15px;
+            color: gray;
+            cursor: pointer;
+            padding: 2px 5px;
+        }
+        #p{
+            margin-top: 10px;
+            font-size: 30px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        #p1{
+            color: grey;
+            width: 300px;
+        }
+        .end{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #end{
+            border-style: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: #0096FF;
+            background-color: #B9D9EB	;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <img src="lake.jpg">
+        </div>
+
+        <div>
+            <button class="btn">Nature</button>
+            <button class="btn">Lake</button>
+        </div>
+
+        <div class="txt">
+            <p id="p">Lago di Braies</p>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum corrupti consequatur dolor tenetur cupiditate eos sapiente, suscipit consectetur. Ad, quod!</p>
+        </div>
+
+        <div class="end">
+            <button id="end">Read More</button>
+        </div>
+    </div>
+</body>
+</html>

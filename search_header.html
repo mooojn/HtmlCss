@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music downloader</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+        #main_cont {
+            
+            display: flex;
+            flex-direction: row;
+            background-color: #9916F9;
+            width: 60%;
+            align-items: center;
+            border-radius: 2px;
+        }
+        #left{
+            width: 125px;
+        }
+        #mid{
+            flex:1;
+        }
+        #right{
+            width: 125px;
+        }
+        p{
+            color: white;
+            padding: 1px 10px;
+        }
+        input{
+            height: 20px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border-style: none;
+            width: 300px;
+            outline: none;
+        }
+        button{
+            background:none;
+            border-radius: 2px;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            padding: 5px 10px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main_cont">
+        <div id="left">
+            <p>Home</p>
+        </div>
+
+        <div id="mid">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        <div id="right">
+            <button>Download</button>
+        </div>
+    </div>
+</body>
+
+</html>
