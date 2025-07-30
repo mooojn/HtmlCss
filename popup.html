@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-cont {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .card-cont {
+            height: 120px;
+            width: 100px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .card-cont h2,
+        .card-cont p {
+            margin-bottom: 10px;
+        }
+
+        .popup-enable {
+            color: blue;
+            cursor: pointer;
+            transition: color ease-in-out 0.3s;
+        }
+
+        .popup-enable:hover {
+            color: rgb(8, 8, 117);
+        }
+
+        .popup-cont {
+            visibility: hidden;
+            width: 200px;
+            text-align: left;
+            border: 1px solid;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: gray;
+            z-index: 9999;
+        }
+
+
+        .popup-cont p {
+            color: red;
+            font-size: 22px;
+            cursor: pointer;
+            text-align: right;
+            background: #000;
+        }
+
+        .popup-cont.show {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-cont">
+        <div class="card-cont">
+            <h2>Munees Tariq</h2>
+            <p>Age: 21</p>
+            <p class="popup-enable" onclick="show()">View Info</p>
+        </div>
+        <div class="card-cont">
+            <h2>Saliq Tariq</h2>
+            <p>Age: 19</p>
+            <p class="popup-enable" onclick="show()">View Info</p>
+        </div>
+        <div class="card-cont">
+            <h2>Meeral Tariq</h2>
+            <p>Age: 16</p>
+            <p class="popup-enable" onclick="show()">View Info</p>
+        </div>
+    </div>
+
+    <div class="popup-cont" id="popup">
+        <p onclick="hide()">X</p>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio animi at numquam expedita aspernatur
+            error cumque ipsam quas neque!</h3>
+    </div>
+
+    <script>
+        function show() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('show');
+        }
+
+        function hide() {
+            const popup = document.getElementById('popup');
+            popup.classList.remove('show');
+        }
+
+    </script>
+</body>
+
+</html>
